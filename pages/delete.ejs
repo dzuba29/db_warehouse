@@ -1,0 +1,14 @@
+<% layout('main_form/page') -%>
+
+<% block('title', 'Delete product'); -%>
+
+<form action="/delete_product" method="post">
+
+	<table class="table_blur">
+		<tr><td>Full name of product:</td><td><input type="text" name="name" required></td></tr>
+	</table>
+	<p><button type="submit">Delete</button></p>
+
+</form>
+
+<br>

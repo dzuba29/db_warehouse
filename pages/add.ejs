@@ -1,0 +1,33 @@
+<% layout('main_form/page') -%>
+
+<% block('title', 'Add product'); -%>
+<form action="/add_data" method="post">
+
+
+<table class="table_blur">
+	<caption>Add product</caption>
+	<tr><td>Id</td><td><input type="text" name="id" required></td></tr>
+	<tr><td>Full name</td><td><input type="text" name="name_full" required></td></tr>
+	<tr><td>Short name</td><td><input type="text" name="name_short" required></td></tr>
+	<tr><td>№ of section</td><td><input type="text" name="section_number" required></td></tr>
+	<tr><td>Shelf №</td><td><input type="text" name="shelf_number" required></td></tr>
+	<tr><td>Weight</td><td><input type="text" name="weight" required></td></tr>
+	<tr><td>Sizes</td><td><input type="text" name="sizes" required></td></tr>
+	<tr><td>Date in</td><td><input type="text" name="date_in" required></td></tr>
+	<tr><td>Date out</td><td><input type="text" name="date_out" required></td></tr>
+	<tr><td>id type</td><td><input type="text" name="id_type" required></td></tr>
+	<tr><td>id company</td><td><input type="text" name="id_company" required></td></tr>
+<!-- 	request.body.id, 
+		request.body.name_full, 
+		request.body.name_short, 
+		request.body.section_number,
+		request.body.shelf_number,
+		request.body.weight,
+		request.body.sizes,
+		request.body.date_in,
+		request.body.date_out	 -->
+</table>
+<p><button type="submit">Add</button></p>
+
+
+</form>

@@ -1,0 +1,19 @@
+<% layout('main_form/page') -%>
+
+<% block('title', 'Companies'); -%>
+
+<table class="table_blur">
+<tr>
+	<th>Id</th>
+	<th>Company name</th>
+	<% rows.forEach((row)=> { %>
+	<tr>
+		<td><%=row.id %></td>
+		<td><%=row.company_name %></td>
+	</tr>
+	<% }); %> 
+
+</tr>
+</table>
+
+

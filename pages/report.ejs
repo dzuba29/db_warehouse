@@ -1,0 +1,27 @@
+<% layout('main_form/page') -%>
+
+<% block('title', 'Report'); -%>
+
+<table class="table_blur">
+<tr>
+	<th>Full name</th>
+	<th>Company name</th>
+	<th>Type of product</th>
+	<th>Measure type</th>
+	<% rows.forEach((row)=> { %>
+	<tr> 
+		<td><%=row.name_full %></td>
+		<td><%=row.company_name %></td>
+		<td><%=row.type_name  %></td>
+		<td><%=row.measure  %></td>
+		
+	</tr>
+	<% }); %> 
+
+</tr>
+</table>
+
+
+
+
+

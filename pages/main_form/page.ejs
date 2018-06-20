@@ -1,0 +1,26 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%=blocks.title%></title>
+  <link href="./style.css" rel="stylesheet">
+ </head>
+ <body>
+
+  <div id="header">Warehouse database </div>
+  <div id="sidebar">    
+        <a href="/get_products" id="btnlike">Products</a><br>      
+        <a href="/get_companies" id="btnlike">Companies</a><br> 
+        <a href="/report" id="btnlike">Report</a><br>  
+        <a href="/data" id="btnlike">Add product</a><br>  
+        <a href="/delete" id="btnlike">Delete product</a><br> 
+        <a href="/search" id="btnlike">Search by full name</a><br>
+        <a href="/interval" id="btnlike">Show by interval</a><br>
+
+  </div>
+  <div id="content">
+   <%-body -%>
+  </div>
+  <div id="footer"></div>
+ </body>
+</html>

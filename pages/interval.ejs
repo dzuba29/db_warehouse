@@ -1,0 +1,42 @@
+<% layout('main_form/page') -%>
+
+<% block('title', 'Interval date'); -%>
+
+<form action="/get_interval" method="post">
+
+	<table class="table_blur">
+		<tr><td>From</td><td><input type="text" name="start" required></td></tr>
+		<tr><td>To</td><td><input type="text" name="end" required></td></tr>
+	</table>
+	<p><button type="submit">Search</button></p>
+
+</form>
+
+<br>
+
+<table class="table_blur">
+<tr>
+	<th>Full Name</th>
+	<th>Short name</th>
+	<th>Section №</th>
+	<th>Shelf №</th>
+	<th>Weight</th>
+	<th>Size</th>	
+	<th>Date in</th>
+	<th>Date out</th>
+	<% rows.forEach((row)=> { %>
+	<tr> 
+		<td><%=row.name_full %></td>
+		<td><%=row.name_short %></td>
+		<td><%=row.section_number %></td>
+		<td><%=row.shelf_number  %></td>
+		<td><%=row.weight %></td>
+		<td><%=row.sizes %></td>
+		<td><%=row.date_in %></td>
+		<td><%=row.date_out %></td>
+
+	</tr>
+	<% }); %> 
+
+</tr>
+</table>
